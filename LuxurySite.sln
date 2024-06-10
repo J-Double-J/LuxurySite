@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxurySite.Server", "LuxurySite.Server\LuxurySite.Server.csproj", "{9E7D508F-B89A-429F-83DD-4B72FEDF5697}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "luxurysite.client", "luxurysite.client\luxurysite.client.esproj", "{8EA10E95-6B4A-4F2E-A608-B7C6E88D0A05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E7D508F-B89A-429F-83DD-4B72FEDF5697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E7D508F-B89A-429F-83DD-4B72FEDF5697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E7D508F-B89A-429F-83DD-4B72FEDF5697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E7D508F-B89A-429F-83DD-4B72FEDF5697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EA10E95-6B4A-4F2E-A608-B7C6E88D0A05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EA10E95-6B4A-4F2E-A608-B7C6E88D0A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EA10E95-6B4A-4F2E-A608-B7C6E88D0A05}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8EA10E95-6B4A-4F2E-A608-B7C6E88D0A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EA10E95-6B4A-4F2E-A608-B7C6E88D0A05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EA10E95-6B4A-4F2E-A608-B7C6E88D0A05}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {457C7CA3-B1CB-4FAD-878A-888D84926933}
+	EndGlobalSection
+EndGlobal
