@@ -1,23 +1,23 @@
 nav {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     height: 5vh;
     width: 100vw;
     background-color: white;
-    padding: 2px;
-    margin-top: 10px;
+    padding-inline: 4rem;
+    padding-top: 1rem;
+    font-size: 18px;
 }
 
-nav .siteHeaderLeft {
-    flex: 1;
-}
-
-nav .siteHeaderRight {
+.siteHeaderLeft,
+.siteHeaderRight {
     flex: 1;
     display: flex;
+}
+
+.siteHeaderRight {
     justify-content: flex-end;
-    margin-right: 4rem;
 }
 
 nav div ul {
@@ -27,13 +27,43 @@ nav div ul {
     gap: 3rem;
 }
 
-
-nav li {
+nav div ul li {
     display: inline-block;
 }
+
+nav div ul li a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+    overflow: hidden;
+    color: inherit;
+    text-decoration: none;
+}
+
+nav div ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: orange;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+}
+
+nav div ul li a:hover::after,
+nav div ul li a:focus::after {
+    transform: translate3d(0,0,0);
+}
+
+
 
 nav h1 {
     display: inline-block;
     font-family: "Motterdam";
     font-size: 40px;
 }
+

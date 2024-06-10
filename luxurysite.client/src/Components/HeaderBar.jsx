@@ -5,9 +5,9 @@ function HeaderBar() {
         <nav>
             <div className={styles.siteHeaderLeft} >
                 <ul role="list">
-                    <li>Women</li>
-                    <li>Men</li>
-                    <li>Collections</li>
+                    <li><a href="#0">Women</a></li>
+                    <li><a href="#0">Men</a></li>
+                    <li><a href="#0">Collections</a></li>
                 </ul>
             </div>
             <h1>Luca Valentini</h1>
