@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Manrope";
+    src: url(assets/fonts/Manrope-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Motterdam";
+    src: url(assets/fonts/Motterdam.ttf);
+}
+
+@font-face {
+    font-family: "EireneSans";
+    src: url(assets/fonts/EireneSans-Regular.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "EireneSans";
+    src: url(assets/fonts/EireneSans-Bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "EireneSans";
+    src: url(assets/fonts/EireneSans-Italic.otf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "EireneSans";
+    src: url(assets/fonts/EireneSans-BoldItalic.otf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+}
