@@ -33,6 +33,16 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: "Lora";
+    src: url(assets/fonts/Lora-VariableFont_wght.ttf);
+}
+
 body {
     font-family: "Manrope", sans-serif;
+    overflow-x: hidden;
+}
+
+:root {
+    --header-height: 5.4rem;
 }

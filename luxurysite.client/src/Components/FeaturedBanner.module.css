@@ -1,0 +1,55 @@
+.banner {
+    display: flex;
+    flex-direction: row;
+}
+
+.banner img {
+    flex: 1;
+}
+
+.banner aside {
+    flex: 1;
+}
+
+.banner aside p:nth-child(1) {
+    font-size: 40px;
+    margin-top: 15rem;
+    font-family: "Lora";
+/*    color: white;*/
+color: #B76E79;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    padding: 1rem;
+    width: 100rem;
+    letter-spacing: 1.4px;
+    padding-left: 1em;
+}
+
+/*    .banner aside p:last-child {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        width: 50rem;
+        font-size: 104px;
+        align-self: flex-end;
+        font-family: "Motterdam";
+        color: #e9bfc3;
+        background-color: #FFFDD0;
+        background-color: #000042;
+        background-color: black;
+        color:#B76E79;
+        padding-left: 30px;
+    }*/
+
+    .banner aside p:last-child {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 280px;
+        font-family: "Motterdam";
+        text-decoration: underline #B76E79 8px;
+        text-decoration-skip-ink: auto;
+        text-underline-offset: 20px;
+    }
