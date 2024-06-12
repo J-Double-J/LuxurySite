@@ -1,6 +1,7 @@
 .banner {
     display: flex;
     flex-direction: row;
+    border-bottom: 1.5px solid lightgray;
 }
 
 .banner img {
@@ -43,13 +44,18 @@ color: #B76E79;
         padding-left: 30px;
     }*/
 
-    .banner aside p:last-child {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        font-size: 280px;
-        font-family: "Motterdam";
-        text-decoration: underline #B76E79 8px;
-        text-decoration-skip-ink: auto;
-        text-underline-offset: 20px;
-    }
+.banner aside p:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 280px;
+    font-family: "Motterdam";
+    text-decoration: underline #B76E79 8px;
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 20px;
+}
+
+.banner img {
+    max-height: 54rem;
+    width: auto;
+}

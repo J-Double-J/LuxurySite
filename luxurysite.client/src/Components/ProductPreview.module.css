@@ -1,0 +1,14 @@
+.productPreview {
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.productPreview img {
+    transition: transform ease 0.5s;
+    height: 100%;
+    width: auto;
+}
+
+.productPreview img:hover {
+    transform: scale(1.1);
+}

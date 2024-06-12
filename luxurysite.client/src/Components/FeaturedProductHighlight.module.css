@@ -1,0 +1,20 @@
+.featuredProductsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    overflow: hidden;
+    gap: 20px;
+    padding: 1% 5% 0% 5%;
+    width: 90vw;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/*.featuredProductsContainer .content {
+    background-color: red;
+    aspect-ratio: 1;
+}*/
+
+.featuredProductsContainer .content:nth-child(n+13) {
+    display: none;
+}

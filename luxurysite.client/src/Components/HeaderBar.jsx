@@ -2,7 +2,7 @@ import styles from './HeaderBar.module.css'
 
 function HeaderBar() {
     return (
-        <nav>
+        <nav className={styles.mainNavBar }>
             <div className={styles.siteHeaderLeft} >
                 <ul role="list">
                     <li><a href="#0">Women</a></li>
@@ -10,7 +10,7 @@ function HeaderBar() {
                     <li><a href="#0">Collections</a></li>
                 </ul>
             </div>
-            <h1>Luca Valentini</h1>
+            <h1><a href="#0">Luca Valentini</a></h1>
             <div className={styles.siteHeaderRight }>
                 <ul>
                     <li>Search</li>

@@ -1,0 +1,31 @@
+.productNavBar {
+    border-bottom: 1.5px solid lightgray;
+    height: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productNavBar ul  {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0;
+}
+
+.productNavBar button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.productNavBar button.isActive {
+    color: red;
+}
