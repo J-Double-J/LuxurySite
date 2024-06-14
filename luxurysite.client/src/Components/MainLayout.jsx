@@ -1,5 +1,6 @@
 import FeaturedBanner from "./FeaturedBanner";
 import FeaturedProductHighlight from "./FeaturedProductHighlight";
+import FeaturedProductHomepageView from "./FeaturedProductHomepageView";
 import styles from "./MainLayout.module.css"
 import ProductNavBar from "./ProductNavBar";
 
@@ -7,8 +8,7 @@ function MainLayout() {
     return (
       <main>
             <FeaturedBanner />
-            <ProductNavBar />
-            <FeaturedProductHighlight />
+            <FeaturedProductHomepageView/>
       </main>
   );
 }
