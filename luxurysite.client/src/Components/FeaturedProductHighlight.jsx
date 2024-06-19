@@ -27,7 +27,7 @@ function FeaturedProductHighlight({ selectedProductType }) {
     const splideRef = useRef(null);
 
     const splideOptions = {
-        height: "20rem",
+        height: "30rem",
         gap: "2rem",
         perPage: 4,
         perMove: 1,
@@ -39,8 +39,6 @@ function FeaturedProductHighlight({ selectedProductType }) {
 
 
     const imageForProduct = (productType) => {
-        console.log(splideRef.current);
-
         switch (productType) {
             case ProductTypes.Earrings:
                 return earring;
@@ -80,7 +78,7 @@ function FeaturedProductHighlight({ selectedProductType }) {
                     products.filter((product) => selectedProductType === ProductTypes.All || product.Type === selectedProductType
                         ).map((product) => (
                             <SplideSlide key={ product.ID }>
-                                <ProductPreview imgUrl={imageForProduct(product.Type)} altText={product.Type} contentBoxClass={styles.content} />
+                                <ProductPreview product={product} imgUrl={imageForProduct(product.Type)} altText={product.Type} contentBoxClass={styles.content} />
                             </SplideSlide>
                     ))
                 }

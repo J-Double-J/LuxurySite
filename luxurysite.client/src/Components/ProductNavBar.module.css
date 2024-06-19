@@ -1,19 +1,21 @@
 .productNavBar {
-    border-bottom: 1.5px solid lightgray;
     height: 3.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 2em 0 2em 0;
 }
 
-.productNavBar ul  {
+.productNavBar ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    width: 100%;
+    width: 40%;
     margin: 0;
+    padding-inline-start: 0px;
 }
 
 .productNavBar button {
@@ -24,8 +26,10 @@
     font: inherit;
     cursor: pointer;
     outline: inherit;
+    font-size: 17px;
+    font-family: "NotoSerif", serif;
 }
 
 .productNavBar button.isActive {
-    color: red;
+    font-size: 32px;
 }

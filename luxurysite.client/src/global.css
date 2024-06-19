@@ -38,6 +38,11 @@
     src: url(assets/fonts/Lora-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: "NotoSerif";
+    src: url(assets/fonts/NotoSerif-VariableFont.ttf);
+}
+
 body {
     font-family: "Manrope", sans-serif;
     overflow-x: hidden;

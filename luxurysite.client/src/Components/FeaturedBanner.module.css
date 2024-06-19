@@ -1,7 +1,6 @@
 .banner {
     display: flex;
     flex-direction: row;
-    border-bottom: 1.5px solid lightgray;
 }
 
 .banner img {

@@ -1,20 +1,7 @@
-.featuredProductsContainer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    overflow: hidden;
-    gap: 20px;
-    padding: 1% 5% 0% 5%;
-    width: 90vw;
-    margin: auto;
-    margin-top: 20px;
-}
-
 .featuredProductsContainerSplide {
     overflow: hidden;
     width: 90vw;
     margin: auto;
-    margin-top: 20px;
 }
 
 .prevArrow {
@@ -30,6 +17,10 @@
 /* :global tag allows this file to add to .splide__arrow class without adding the hash at the end. */
 :global .splide__arrow:disabled {
     display: none;
+}
+
+.featuredProductsContainerSplide :global .splide {
+    padding-top: 0px;
 }
 
 /* Children after the 12th content is excluded */
