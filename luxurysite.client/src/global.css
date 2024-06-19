@@ -43,6 +43,11 @@
     src: url(assets/fonts/NotoSerif-VariableFont.ttf);
 }
 
+html {
+    font-size: calc(15px + 0.390625vw)
+}
+
+
 body {
     font-family: "Manrope", sans-serif;
     overflow-x: hidden;

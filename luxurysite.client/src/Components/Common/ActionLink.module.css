@@ -1,0 +1,32 @@
+a.actionLink {
+    color: #B76E79;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1em;
+    transition: transform 0.4s ease;
+}
+
+a.actionLink::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform-origin: bottom center;
+    transition: transform 0.4s ease;
+}
+
+a.actionLink:hover,
+a.actionLink:active {
+    transform: translateY(-0.3em); /* Move text upward */
+    filter: brightness(1.2);
+}
+
+a.actionLink:hover::after,
+a.actionLink:active::after {
+    transform: translateY(0.3em); /* Move underline downwards to same position */
+}

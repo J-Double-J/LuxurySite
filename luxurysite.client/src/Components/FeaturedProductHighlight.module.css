@@ -28,42 +28,10 @@
     display: none;
 }
 
-.aSlide {
+.actionSlide {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-}
-
-.aSlide a {
-    color: #B76E79;
-    font-weight: bold;
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    font-size: 18px;
-    transition: transform 0.4s ease;
-}
-
-.aSlide a::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: currentColor;
-    transform-origin: bottom center;
-    transition: transform 0.4s ease;
-}
-
-.aSlide a:hover,
-.aSlide a:active {
-    transform: translateY(-0.3em); /* Move text upward */
-}
-
-.aSlide a:hover::after,
-.aSlide a:hover::after {
-    transform: translateY(0.3em); /* Move underline downwards to same position */
 }

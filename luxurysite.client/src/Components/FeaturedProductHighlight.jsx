@@ -11,6 +11,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/sea-green';
 import styles from './FeaturedProductHighlight.module.css'
+import ActionLink from './Common/ActionLink'
 
 
 function CustomArrow({ direction, onClick }) {
@@ -72,7 +73,6 @@ function FeaturedProductHighlight({ selectedProductType }) {
               aria-label="Product Images"
               ref={ splideRef }
             >
-                <ul className="splide__pagination"></ul>
                 <SplideTrack>
                 {
                     products.filter((product) => selectedProductType === ProductTypes.All || product.Type === selectedProductType
@@ -83,8 +83,8 @@ function FeaturedProductHighlight({ selectedProductType }) {
                     ))
                 }
                 <SplideSlide>
-                    <div className={styles.aSlide }>
-                            <a href="#0">Shop { selectedProductType }</a>
+                    <div className={styles.actionSlide}>
+                        <ActionLink text={`Shop ${selectedProductType}`} href="#0" />
                     </div>
                 </SplideSlide>
                 </SplideTrack>
