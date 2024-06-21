@@ -23,18 +23,21 @@ function ProductNavBar({ onActiveButtonChanged }) {
     }
 
   return (
-      <nav className = { styles.productNavBar }>
-          <ul>
-              {buttons.map(buttonObj => (
-                  <li key={buttonObj.id}>
-                      <button
-                          onClick={() => toggleActiveButton(buttonObj.id)}
-                          className={activeButtonID === buttonObj.id ? styles.isActive : ''}>
-                          {buttonObj.name}
-                      </button>
-                  </li>
-              ))}
-          </ul>
+      <nav className={styles.productNavBar}>
+          <div className={styles.navListBox }>
+              <ul>
+                  {buttons.map(buttonObj => (
+                      <li key={buttonObj.id}>
+                          <button
+                              onClick={() => toggleActiveButton(buttonObj.id)}
+                              className={activeButtonID === buttonObj.id ? styles.isActive : ''}>
+                              {buttonObj.name}
+                          </button>
+                      </li>
+                  ))}
+              </ul>
+          </div>
+          
       </nav>
   );
 }

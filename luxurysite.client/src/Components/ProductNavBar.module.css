@@ -1,10 +1,16 @@
 .productNavBar {
-    height: 3.5rem;
+    min-height: 3.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 2em 0 2em 0;
+    overflow-x: scroll;
+}
+
+.navListBox {
+    padding: 0 2rem;
+    margin-left: 2rem;
 }
 
 .productNavBar ul {
@@ -13,9 +19,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    width: 40%;
-    margin: 0;
     padding-inline-start: 0px;
+    gap: 3rem;
 }
 
 .productNavBar button {
@@ -26,10 +31,22 @@
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    font-size: 17px;
-    font-family: "NotoSerif", serif;
+    font-size: 1rem;
+    font-family: "Lora", serif;
 }
 
 .productNavBar button.isActive {
-    font-size: 32px;
+    font-size: clamp(1.5rem, .7512vw + 1.3239rem, 2rem);
+}
+
+@media(max-width: 850px) {
+    .productNavBar ul {
+        gap: 2rem;
+    }
+}
+
+@media(max-width: 675px) {
+    .productNavBar ul {
+        gap: 1.5rem;
+    }
 }

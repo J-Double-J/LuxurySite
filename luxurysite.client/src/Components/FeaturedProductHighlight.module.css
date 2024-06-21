@@ -35,3 +35,9 @@
     height: 100%;
     width: 100%;
 }
+
+@media(max-width: 406px) {
+    .actionSlide {
+        font-size: 15px;
+    }
+}

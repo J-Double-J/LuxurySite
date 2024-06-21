@@ -14,10 +14,10 @@ import styles from './FeaturedProductHighlight.module.css'
 import ActionLink from './Common/ActionLink'
 
 
-function CustomArrow({ direction, onClick }) {
+function CustomSplideArrow({ direction, onClick }) {
     const customClass = direction === 'prev' ? styles.prevArrow : styles.nextArrow
     return (
-        <button className={`splide__arrow splide__arrow--${direction} ${customClass}`} type="button">
+        <button className={`splide__arrow splide__arrow--${direction} ${customClass}`} type="button" onClick={() => onClick() } >
             {direction === 'prev' ? <img src={leftArrow} alt="Left Arrow" /> : <img src={rightArrow} alt="Right Arrow" /> }
         </button>
     );
@@ -26,18 +26,46 @@ function CustomArrow({ direction, onClick }) {
 function FeaturedProductHighlight({ selectedProductType }) {
     const [prevProductType, setPrevProductType] = useState(null);
     const splideRef = useRef(null);
+    let removedEdgePaddings = false;
 
+    const peakPadding = '50%';
     const splideOptions = {
-        height: "30rem",
+        autoHeight: true,
+        //autoWidth: true,
         gap: "2rem",
-        perPage: 4,
+        perPage: 3,
         perMove: 1,
         omitEnd: true,
         speed: 250,
         rewind: false,
-        pagination: false
-    };
+        pagination: false,
+        // Initially left has no padding, but will get the default padding as it moves from the leftmost slide.
+        //focus: "center",
+        breakpoints: {
+            1575: {
+                perPage: 3,
+            },
 
+            1300: {
+                perPage: 2,
+                heightRatio: 0.6,
+                autoHeight: false
+            },
+
+            900: {
+                perPage: 1,
+                height: "92vh",
+                autoHeight: false
+            },
+
+            700: {
+                height: "fit-content",
+                //autoHeight: false
+                //heightRatio: 0.6,
+                autoHeight: false
+            }
+        }
+    };
 
     const imageForProduct = (productType) => {
         switch (productType) {
@@ -60,18 +88,50 @@ function FeaturedProductHighlight({ selectedProductType }) {
         }
     };
 
+
+    const removeEdgePaddings = (prevArrow, nextArrow) => {
+        //const prevArrow = document.querySelector('.splide__arrow--prev');
+        //const nextArrow = document.querySelector('.splide__arrow--next');
+
+        // Check if we're at the edges of the splide carousel
+        if (prevArrow.disabled) {
+            console.log("Prev Disabled");
+            splideRef.current.splide.options = {
+                padding: { left: '0%', right: defaultPadding }
+            };
+
+            removedEdgePaddings = true;
+        }
+        else if (nextArrow.disabled) {
+            console.log("Next Disabled");
+            splideRef.current.splide.options = {
+                padding: { left: defaultPadding, right: '0%' }
+            };
+
+            removedEdgePaddings = true;
+        }
+        // Since we're not at the edge, see if we need to reimplement normal padding.
+        else if (removedEdgePaddings) {
+            splideRef.current.splide.options = {
+                padding: { left: defaultPadding, right: defaultPadding }
+            };
+
+            removedEdgePaddings = false;
+        }
+    }
+
     if (selectedProductType !== prevProductType)
     {
         goToStart();
         setPrevProductType(selectedProductType);
     }
-    
+
     return (
       <div className={styles.featuredProductsContainerSplide}>
             <Splide options={splideOptions}
-                hasTrack={ false }
-              aria-label="Product Images"
-              ref={ splideRef }
+                hasTrack={false}
+                aria-label="Product Images"
+                ref={splideRef}
             >
                 <SplideTrack>
                 {
@@ -89,8 +149,8 @@ function FeaturedProductHighlight({ selectedProductType }) {
                 </SplideSlide>
                 </SplideTrack>
                 <div className="splide__arrows">
-                    <CustomArrow direction="prev" />
-                    <CustomArrow direction="next" />
+                    <CustomSplideArrow direction="prev" />
+                    <CustomSplideArrow direction="next" />
                 </div>
           </Splide>
       </div>
