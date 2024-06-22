@@ -60,8 +60,6 @@ function FeaturedProductHighlight({ selectedProductType }) {
 
             700: {
                 height: "fit-content",
-                //autoHeight: false
-                //heightRatio: 0.6,
                 autoHeight: false
             }
         }

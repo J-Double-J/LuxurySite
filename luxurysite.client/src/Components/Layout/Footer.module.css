@@ -1,0 +1,52 @@
+.pageFooter {
+    padding: 2rem;
+    width: 100%;
+    border-top: 1px solid gray;
+}
+
+.gridContainer {
+    --newsletter: "newsletter";
+    --menuOne: "menuOne";
+    --menuTwo: "menuTwo";
+    --contact: "contact";
+    --otherMenuOne: "otherMenuOne";
+    --otherMenuTwo: "otherMenuTwo";
+    --copyright: "copyright";
+
+    display: grid;
+    /* This property needs to be overwritten in the component implementing this class */
+    grid-template-areas: '';
+    gap: 3rem 1rem;
+}
+
+.footerGridItem {
+    font-size: 0.7rem;
+}
+
+.footerGridItem ul {
+    list-style: none;
+    padding-inline-start: 0;
+    margin-block-start: 0.2rem;
+    margin-block-end: 0rem;
+}
+
+.footerGridItem a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footerGridItem a:hover,
+.footerGridItem a:focus {
+    color: var(--rose-gold);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.footerGridItem h2 {
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.footerGridItem.menuOne {
+    grid-area: menuOne;
+}

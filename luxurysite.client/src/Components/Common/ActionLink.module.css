@@ -1,5 +1,5 @@
 a.actionLink {
-    color: #B76E79;
+    color: var(--rose-gold);
     font-weight: bold;
     position: relative;
     display: inline-block;

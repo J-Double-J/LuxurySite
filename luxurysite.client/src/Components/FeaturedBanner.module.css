@@ -30,7 +30,7 @@
 .banner aside p:first-of-type {
     font-size: 1.9rem;
     font-family: "Lora";
-    color: #B76E79;
+    color: var(--rose-gold);
     padding: 1rem;
     letter-spacing: 1.4px;
     padding-left: 1em;
@@ -41,7 +41,7 @@
 .banner aside p:last-of-type {
     font-size: 9.3rem;
     font-family: "Motterdam";
-    text-decoration: underline #B76E79 0.372rem; /* 4% of 9.3 */
+    text-decoration: underline var(--rose-gold) 0.372rem; /* 4% of 9.3 */
     text-decoration-skip-ink: auto;
     text-underline-offset: 20px;
     color: #3d3434;

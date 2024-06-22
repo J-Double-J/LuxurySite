@@ -10,7 +10,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="src\assets\SampleData\" />
-    <Folder Include="src\Components\Common\" />
+    <Folder Include="src\Components\Layout\" />
+    <Folder Include="src\Components\Contexts\" />
     <Folder Include="src\Constants\" />
   </ItemGroup>
 </Project>

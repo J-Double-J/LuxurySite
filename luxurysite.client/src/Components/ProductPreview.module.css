@@ -34,7 +34,7 @@
 
 .productDetails button {
     background-color: white;
-    color: #B76E79;
+    color: var(--rose-gold);
     border: none;
     text-decoration: underline;
     text-underline-offset: 0.4em;
