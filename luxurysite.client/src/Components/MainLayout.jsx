@@ -1,7 +1,7 @@
 import FeaturedBanner from "./FeaturedBanner";
 import FeaturedProductHighlight from "./FeaturedProductHighlight";
 import FeaturedProductHomepageView from "./FeaturedProductHomepageView";
-import LuxuryFooter from "./LuxuryFooter";
+import LuxuryFooter from "./Footer/LuxuryFooter";
 
 import styles from "./MainLayout.module.css";
 

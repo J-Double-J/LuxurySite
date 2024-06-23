@@ -1,0 +1,28 @@
+.newsletterFooter {
+    max-width: 450px;
+}
+
+.newsletterForm {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.newsletterForm input {
+    flex: 4;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 7px;
+}
+
+.newsletterForm button {
+    flex: 1;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid black; 
+    max-width: fit-content;
+    padding: 0 0 3px 0;
+    text-transform: uppercase;
+}

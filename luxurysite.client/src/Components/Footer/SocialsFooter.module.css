@@ -1,0 +1,13 @@
+.socialsFooter img {
+    filter: invert(70%) sepia(0%) saturate(2%) hue-rotate(34deg) brightness(96%) contrast(93%); /* Black to "Darkgray" */
+    height: 16px;
+    width: 16px;
+}
+
+.socialsFooter ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    list-style: none;
+    padding-inline-start: 0rem;
+}
