@@ -1,5 +1,4 @@
 import FeaturedBanner from "./FeaturedBanner";
-import FeaturedProductHighlight from "./FeaturedProductHighlight";
 import FeaturedProductHomepageView from "./FeaturedProductHomepageView";
 import LuxuryFooter from "./Footer/LuxuryFooter";
 

@@ -56,4 +56,5 @@ body {
 :root {
     --header-height: 5.4rem;
     --rose-gold: #B76E79;
+    --rose-gold-filter: invert(51%) sepia(24%) saturate(685%) hue-rotate(301deg) brightness(92%) contrast(95%); /* For Black SVGs */
 }

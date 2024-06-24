@@ -6,12 +6,12 @@
 
 .prevArrow {
     left: 0px;
-    filter: invert(51%) sepia(24%) saturate(685%) hue-rotate(301deg) brightness(92%) contrast(95%);
+    filter: var(--rose-gold-filter)
 }
 
 .nextArrow {
     right: 0px;
-    filter: invert(51%) sepia(24%) saturate(685%) hue-rotate(301deg) brightness(92%) contrast(95%);
+    filter: var(--rose-gold-filter)
 }
 
 /* :global tag allows this file to add to .splide__arrow class without adding the hash at the end. */

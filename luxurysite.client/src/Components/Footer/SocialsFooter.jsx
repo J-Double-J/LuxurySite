@@ -3,10 +3,10 @@ import facebookLogo from '../../assets/OtherLogos/facebook.svg';
 import instagramLogo from '../../assets/OtherLogos/instagram.svg';
 import pinterestLogo from '../../assets/OtherLogos/pinterest.svg';
 import linkedInLogo from '../../assets/OtherLogos/linkedIn.svg';
-function SocialsFooter() {
+function SocialsFooter({ title }) {
   return (
       <div className={styles.socialsFooter}>
-          <h2>Social</h2>
+          <h2>{title}</h2>
           <ul>
               <li><a href="#0"><img src={facebookLogo } alt = "Facebook"/></a></li>
               <li><a href="#0"><img src={instagramLogo} alt = "Instagram"/></a></li>
