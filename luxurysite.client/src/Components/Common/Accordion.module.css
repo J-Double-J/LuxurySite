@@ -21,6 +21,10 @@
     font-size: 16px;
 }
 
+.accordionHeader:active {
+    background-color: #f2eded;
+}
+
 .accordionHeader button {
     background: inherit;
     border: none;
@@ -31,6 +35,7 @@
     transition: transform 500ms;
     filter: var(--rose-gold-filter);
     cursor: pointer;
+    background-color: transparent
 }
 
 .accordionHeader button:active {

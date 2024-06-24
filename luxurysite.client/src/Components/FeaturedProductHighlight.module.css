@@ -14,6 +14,15 @@
     filter: var(--rose-gold-filter)
 }
 
+.prevArrow,
+.nextArrow {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 /* :global tag allows this file to add to .splide__arrow class without adding the hash at the end. */
 :global .splide__arrow:disabled {
     display: none;
